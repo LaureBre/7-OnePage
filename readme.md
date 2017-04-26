@@ -4,7 +4,7 @@ Il s'agissait cette semaine de bêtement recopier du code pour utiliser des
 fonctionnalités de Bootstrap. **Ne rien comprendre n'apprend rien...** Alors
 comme d'autres j'ai cherché.
 
-## [Lorem ipsum]()
+## [Lorem ipsum](https://htmlpreview.github.io/?https://github.com/LaureBre/7-OnePage/blob/master/onepage.html)
 
 Voici donc avec **bootstrap** un groupe de ***jumbotrons*** bien longs, auxquels on peut accéder via un **menu horizontal qui *collapse*** sur petit écran.
 
