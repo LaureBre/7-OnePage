@@ -28,3 +28,7 @@ Suite à quoi j'ai trouvé un bout de code.
     Merci à ceux qui partagent ! Un de ces prochains jours, on saura faire par nous-même....
 
 Enfin, il fallait que chaque chapitre s'affiche seul à l'écran en ajoutant une hauteur aux jumbotrons, les adaptant à la hauteur de l'appareil. Un autre code javascript à recopier sans comprendre. Quoique là le code est nettement plus clair, abordable.
+
+* Il y a une chose qui ne marche pas : le retour en haut de page lorsqu'on clique sur le titre de la page à gauche du menu. href="#" ne fait rien ! Et ça je n'ai pas trouvé pourquoi. Après il serait tout simple de nommer l'ancre mais bon...
+
+* Ce que je n'ai pas su faire, c'est adapter le code de fermeture de menu pour le clic sur le titre de page. Il faudra apprendre javascript avant ça.
