@@ -1,0 +1,32 @@
+.icon-bar {
+  border: 2px dotted green;
+  /* ajout d'attributs pour comprendre ces trois spans vides */
+}
+
+.navbar-brand {
+  color: darkred !important;
+  /* ajout d'un attribut pour comprendre le scroll up qui ne fonctionne pas */
+  /* !important pour court-circuiter les réglages bootstrap */
+  /* sinon je pouvais changer la couleur dans boostrap.css ligne 4499 */
+}
+
+@media screen and (min-width: 768px) {
+  .jumbotron h1 {
+    font-size: 50px;
+    color: rgba(255, 100, 0, 0.7);
+    /* sinon je pouvais changer la taille dans boostrap.css ligne 4998 */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .jumbotron h1 {
+    font-size: 30px;
+    color: rgba(80, 205, 0, 0.9);
+    /* pour jouer encore avec la couleur */
+  }
+  .jumbotron {
+    padding-top: 56px !important;
+    /* comme j'ai épaissi la nav-bar avec mes 2px de bordure d'icon-bar,
+    il fallait que j'ajoute au padding-top */
+  }
+}

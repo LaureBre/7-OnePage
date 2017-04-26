@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Lorem Ipsum</title>
+  <link type="text/css" rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link type="text/css" rel="stylesheet" href="./assets/css/mestrucs.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+  <!--  -->
+  <div class="container-fluid"> <!-- container-fluid -->
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+
+      <div class="container-fluid"> <!-- container-fluid -->
+
+        <div class="navbar-header"> <!-- MENU COLLAPSé -->
+
+          <button type="button" data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle">
+            <!-- Ici les trois petits traits du menu collapsed !
+              pas de texte dedans, mais on peut changer la couleur -->
+            <!-- Au clic le menu s'ouvre, en flex: columns
+              par contre il faut recliquer pour que le menu disparaisse ?!? -->
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <!-- Titre de page posé à gauche du menu -->
+          <!-- href="#" renvoie théoriquement en haut de page -->
+          <a href="#" class="navbar-brand">Lorem Ipsum</a>
+          <!-- apparaît identique sur menu collapsé et non collapsé -->
+
+        </div> <!-- MENU COLLAPSé -->
+
+        <div class="collapse navbar-collapse"> <!-- MENU NON COLLAPSé -->
+          <!-- ligne 4201 bootstrap.css:
+        .navbar-collapse.collapse { display: block; height: auto; overflow: visible; }
+               sinon collapse ligne 3476 :
+        .collapse { display: none; }
+               après on voit du .container-fluid > .navbar-collapse où ">" signifie
+               qu'on prend tous les .navbar-collapse directement enfants de .container-fluid
+          -->
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#origine">Origine</a></li>
+              <!-- la classe active change la couleur pour gris :
+                ne pas la mettre partout ! -->
+            <li><a href="#classique">Classique</a></li>
+            <li><a href="#ciceron">Ciceron</a></li>
+            <li><a href="#pourquoi">Pourquoi</a></li>
+            <li><a href="#traduction">Traduction</a></li>
+            <li><a href="#français">Français</a></li>
+          </ul>
+        </div> <!-- MENU NON COLLAPSé -->
+
+      </div> <!-- container-fluid -->
+
+    </nav>
+
+  </div> <!-- container-fluid -->
+
+  <section class="jumbotron" id="origine"> <!-- jumbotron = écran mega-large -->
+    <!-- apparence Jumbotron pour la section : gris, coins ronds, largeur page, grand -->
+      <div class="container">
+          <h1>Le Lorem Ipsum expliqué sur le site
+            <a href="http://fr.lipsum.com/" target="_blank">http://fr.lipsum.com/</a></h1>
+          <p> le Lorem Ipsum n'est pas simplement du texte aléatoire. Il trouve
+            ses racines dans une oeuvre de la littérature latine classique
+            datant de 45 av. J.-C., le rendant vieux de 2000 ans. Un professeur
+            du Hampden-Sydney College, en Virginie, s'est intéressé à un des
+            mots latins les plus obscurs, consectetur, extrait d'un passage du
+            Lorem Ipsum, et en étudiant tous les usages de ce mot dans la
+            littérature classique, découvrit la source incontestable du Lorem
+            Ipsum. Il provient en fait des sections 1.10.32 et 1.10.33 du "De
+            Finibus Bonorum et Malorum" (Des Suprêmes Biens et des Suprêmes
+            Maux) de Cicéron. Cet ouvrage, très populaire pendant la
+            Renaissance, est un traité sur la théorie de l'éthique.
+          </p>
+      </div>
+  </section>
+
+  <section class="jumbotron" id="classique">
+      <div class="container">
+          <h1>Le passage de Lorem Ipsum standard, utilisé depuis 1500</h1>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum."
+          </p>
+      </div>
+  </section>
+
+  <section class="jumbotron" id="ciceron">
+      <div class="container">
+          <h1>Section 1.10.32 du <em>"De Finibus Bonorum et Malorum"</em>
+             de Ciceron (45 av. J.-C.)</h1>
+          <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore veritatis et quasi architecto beatae vitae
+            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+            eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+            qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+            sed quia non numquam eius modi tempora incidunt ut labore et dolore
+            magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+            nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
+            aliquid ex ea commodi consequatur? Quis autem vel eum iure
+            reprehenderit qui in ea voluptate velit esse quam nihil molestiae
+            consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+          </p>
+      </div>
+  </section>
+
+  <section class="jumbotron" id="pourquoi">
+      <div class="container">
+          <h1>Pourquoi l'utiliser ?</h1>
+          <p>On sait depuis longtemps que travailler avec du texte lisible et
+            contenant du sens est source de distractions, et empêche de se
+            concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum
+            sur un texte générique comme 'Du texte. Du texte. Du texte.' est
+            qu'il possède une distribution de lettres plus ou moins normale, et
+            en tout cas comparable avec celle du français standard. De
+            nombreuses suites logicielles de mise en page ou éditeurs de sites
+            Web ont fait du Lorem Ipsum leur faux texte par défaut, et une
+            recherche pour 'Lorem Ipsum' vous conduira vers de nombreux sites
+            qui n'en sont encore qu'à leur phase de construction. Plusieurs
+            versions sont apparues avec le temps, parfois par accident, souvent
+            intentionnellement (histoire d'y rajouter de petits clins d'oeil,
+            voire des phrases embarassantes).
+          </p>
+      </div>
+  </section>
+
+    <section class="jumbotron" id="traduction">
+        <div class="container">
+            <h1>Traduction en anglais de H. Rackham (1914)</h1>
+            <p>"But I must explain to you how all this mistaken idea of
+              denouncing pleasure and praising pain was born and I will
+              give you a complete account of the system, and expound the
+              actual teachings of the great explorer of the truth, the
+              master-builder of human happiness. No one rejects, dislikes,
+              or avoids pleasure itself, because it is pleasure, but because
+              those who do not know how to pursue pleasure rationally encounter
+              consequences that are extremely painful. Nor again is there anyone
+              who loves or pursues or desires to obtain pain of itself, because
+              it is pain, but because occasionally circumstances occur in which
+              toil and pain can procure him some great pleasure. To take a
+              trivial example, which of us ever undertakes laborious physical
+              exercise, except to obtain some advantage from it? But who has
+              any right to find fault with a man who chooses to enjoy a pleasure
+              that has no annoying consequences, or one who avoids a pain that
+              produces no resultant pleasure?"
+            </p>
+        </div>
+    </section>
+
+    <section class="jumbotron" id="français">
+        <div class="container">
+            <h1>Et en français ?</h1>
+            <p> « Personne n'aime la douleur en elle-même, ne la recherche et
+              ne la souhaite, tout simplement parce qu'il s'agit de la douleur... ».
+            </p>
+            <p>Bon ben... nous voilà instruits.
+            </p>
+        </div>
+    </section>
+  <!-- Les scripts tout à la fin pour permettre de charger le reste avant -->
+  <!-- query avant le javascript bootstrap -->
+  <script src="./assets/js/jquery-3.2.1.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/effet_defilement_au_clic_menu.js"></script>
+  <script src="./assets/js/effet_defilement_au_scroll_souris.js"></script>
+  <script src="./assets/js/fermeture_menu.js"></script>
+  <script src="./assets/js/chapitre_unique.js"></script>
+</body>
+
+</html>
